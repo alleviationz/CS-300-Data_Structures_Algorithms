@@ -1,0 +1,49 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userprefs
+*.ncb
+*.aps
+*.log
+*.bak
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.res
+*.sbr
+*.pch
+*.idb
+*.opt
+*.ipch
+*.tlog
+*.lastbuildstate
+*.VC.db
+*.sdf
+*.cache
+*.opendb
+*.VC.UpgradeLog
+
+# Build artifacts
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+ARM/
+bin/
+obj/
+*.exe
+*.dll
+*.com
+*.ilk
+*.pdb
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Temporary files
+temp/
+tmp/
