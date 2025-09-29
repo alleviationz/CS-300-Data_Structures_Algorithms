@@ -1,7 +1,0 @@
-﻿  pch.cpp
-  test.cpp
-C:\Users\allev\source\repos\CS300 Project 2\Project2_Tests\test.cpp(10,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  (compiling source file '/test.cpp')
-  
-  LINK : C:\Users\allev\source\repos\CS300 Project 2\x64\Debug\Project2_Tests.exe not found or not built by the last incremental link; performing full link
-  Project2_Tests.vcxproj -> C:\Users\allev\source\repos\CS300 Project 2\x64\Debug\Project2_Tests.exe
