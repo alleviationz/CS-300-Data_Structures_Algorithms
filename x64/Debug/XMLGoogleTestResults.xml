@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="6" failures="0" disabled="0" errors="0" timestamp="2025-09-29T13:24:41" time="0" name="AllTests">
-  <testsuite name="BinarySearchTreeTest" tests="6" failures="0" disabled="0" errors="0" time="0">
+<testsuites tests="6" failures="0" disabled="0" errors="0" timestamp="2025-09-29T17:37:44" time="0.001" name="AllTests">
+  <testsuite name="BinarySearchTreeTest" tests="6" failures="0" disabled="0" errors="0" time="0.001">
     <testcase name="BinarySearchTreeRootNullptr" status="run" time="0" classname="BinarySearchTreeTest" />
     <testcase name="BinarySearchTreeNodeCountStartsAtZero" status="run" time="0" classname="BinarySearchTreeTest" />
     <testcase name="BinarySearchTreeSizeEmptySizeCorrect" status="run" time="0" classname="BinarySearchTreeTest" />

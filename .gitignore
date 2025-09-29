@@ -25,6 +25,9 @@
 *.cache
 *.opendb
 *.VC.UpgradeLog
+*.exe
+*.dll
+
 
 # Build artifacts
 [Dd]ebug/
