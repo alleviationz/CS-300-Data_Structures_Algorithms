@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\allev\source\repos\CS300 Project 2\x64\Debug\Project2_Tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeRootNullptr" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeNodesStartsAtZero" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeNodeCountStartsAtZero" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeSizeEmptySizeCorrect" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeSize10NodeSizeCorrect" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeSizeVariableNodeSizeCorrect" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeSuccessfullyReturnsCourse" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeSuccessfullyInsertsCourse" Duration="1" />
+    <TestDuration Test="BinarySearchTreeTest.BinarySearchTreeNodeCountStartsAtOne" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
