@@ -9,11 +9,11 @@ C:\Users\allev\source\repos\CS300 Project 2\packages\matplotlib-cpp.1.1.0.92\inc
       the template instantiation context (the oldest one first) is
           C:\Users\allev\source\repos\CS300 Project 2\Project2\CS300_Project2.cpp(42,34):
           see reference to class template instantiation 'DataStructureManager<Course>' being compiled
-          C:\Users\allev\source\repos\CS300 Project 2\Project2\DataStructureManager.h(69,10):
+          C:\Users\allev\source\repos\CS300 Project 2\Project2\DataStructureManager.h(81,10):
           while compiling class template member function 'void DataStructureManager<Course>::plotVectorTimes(void)'
-              C:\Users\allev\source\repos\CS300 Project 2\Project2\CS300_Project2.cpp(128,44):
+              C:\Users\allev\source\repos\CS300 Project 2\Project2\CS300_Project2.cpp(127,44):
               see the first reference to 'DataStructureManager<Course>::plotVectorTimes' in 'main'
-          C:\Users\allev\source\repos\CS300 Project 2\Project2\DataStructureManager.h(79,14):
+          C:\Users\allev\source\repos\CS300 Project 2\Project2\DataStructureManager.h(91,14):
           see reference to function template instantiation 'bool matplotlibcpp::plot<double,size_t>(const std::vector<double,std::allocator<double>> &,const std::vector<size_t,std::allocator<size_t>> &,const std::string &)' being compiled
           C:\Users\allev\source\repos\CS300 Project 2\packages\matplotlib-cpp.1.1.0.92\include\matplotlibcpp\plot.h(40,24):
           see reference to function template instantiation 'PyObject *matplotlibcpp::get_array<size_t>(const std::vector<size_t,std::allocator<size_t>> &)' being compiled
