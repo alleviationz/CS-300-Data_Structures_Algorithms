@@ -30,10 +30,10 @@ private:
         explicit Node(const T& data) : data(data) {};   // move constructor
     };
 
-    int nodeCount = 0;
+    size_t nodeCount = 0;
 
 
-    int getSizeBSTMembers() {
+    size_t getSizeBSTMembers() {
         // only calc static class members/pointer sizes, functions variables are dynamically allocated/deallocated
         return sizeof(this) + sizeof(this->getNodeCount()) + sizeof(root);
     };
@@ -104,27 +104,24 @@ private:
     };
 
 public:
-    // BST header
-
-    // root node initialized to nullptr after constructor is called
+    // root node initialized to nullptr after implicit constructor is called
     unique_ptr<Node> root = nullptr;
 
-    int getNodeCount() const {
+    size_t getNodeCount() const {
         return this->nodeCount;
     };
 
     // timer is based on your relative computer, results are variable
-    auto getSearchTime() {
-        string nullString;
+    auto getSearchTime(string& courseId) {
         auto timer_start = chrono::high_resolution_clock::now();
-        this->SearchHelper(root, nullString);
+        this->Search(courseId);
         auto timer_end = chrono::high_resolution_clock::now();
-        chrono::duration<double, milli> duration = timer_end - timer_start;
+        chrono::duration<double, micro> duration = timer_end - timer_start;
         return duration.count();
     }
 
     // size calc base BST size + (Node count * Node size)
-    int getSize() {
+    size_t getSize() {
         return (this->nodeCount * sizeof(Node) + getSizeBSTMembers());
     }
 
