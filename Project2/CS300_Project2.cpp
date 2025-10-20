@@ -136,63 +136,6 @@ int main(int argc, char* argv[]) {
                 break;
             }
         }
-        //switch (userOption) {
-        //    case 1: {
-        //        // load and insert each course from loaded file into a BST node, and add to the BST
-        //        loadCourses(csvPath, courses);
-
-        //        for (Course course : courses) {
-        //            BST.Insert(course);
-        //        }
-
-        //        break;
-        //    }
-        //    case 2: {
-        //        // Print all nodes in order
-        //        BST.InOrderPrint();
-        //        break;
-        //    }
-        //    case 3: {
-        //        // search for a particular node by courseId
-        //        try {
-        //            cout << "Please enter course ID to search for: " << endl;
-        //            string courseId;
-        //            cin >> courseId;
-        //            const Course* course = BST.Search(courseId);
-
-        //            if (course->courseId == courseId) {
-        //                cout << course->courseId << " found: " << course->courseName << endl;
-        //            }
-        //            else {
-        //                cout << "No course found" << endl;
-        //            }
-        //        }
-        //        catch (exception& e) {
-        //            cout << e.what() << endl;
-        //            break;
-        //        }
-
-        //        break;
-        //    }
-        //    case 4: {
-        //        // get size of BST
-        //        cout << "Size: " << BST.getSize() << endl;
-        //        break;
-        //    }
-        //    case 5: {
-        //        // full length BST search time
-        //        cout << "Time for full traversal: " << BST.getSearchTime() << " ms" << endl;
-        //        break;
-        //    }
-        //    case 9: {
-        //        // exit application
-        //        cout << "Goodbye" << endl;
-        //        return 0;
-        //    }
-        //    default: {
-        //        cout << endl << "Invalid option." << endl;
-        //    }
-    //}
     }
 
     return 0;

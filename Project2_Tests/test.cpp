@@ -18,8 +18,9 @@ TEST_F(BinarySearchTreeTest, BinarySearchTreeNodeCountStartsAtZero) {
 	ASSERT_EQ(BST.getNodeCount(), 0);
 };
 
+// size of empty bst is just the members: 32 bytes
 TEST_F(BinarySearchTreeTest, BinarySearchTreeSizeEmptySizeCorrect) {
-	ASSERT_EQ(BST.getSize(), 24);
+	ASSERT_EQ(BST.getSize(), 32);
 };
 
 TEST_F(BinarySearchTreeTest, BinarySearchTreeSizeVariableNodeSizeCorrect) {
@@ -38,9 +39,9 @@ TEST_F(BinarySearchTreeTest, BinarySearchTreeSizeVariableNodeSizeCorrect) {
 		BST.Insert(course);
 	};
 
-	// base size of BST is 24 bytes, size of node is 16 bytes + size of Course, which is 112 bytes
+	// base size of BST & members is 32 bytes, size of node is 16 bytes + size of Course, which is 112 bytes
 	// ending i is how many nodes were added
-	size_t total_size = 24 + (112 + 16) * i;
+	size_t total_size = 32 + (112 + 16) * i;
 	ASSERT_EQ(BST.getSize(), total_size);
 };
 

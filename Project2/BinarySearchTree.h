@@ -17,8 +17,10 @@
 // Binary Search Tree Storage
 //============================================================================
 
+// template type takes any data object to store in nodes
 template <typename T>
 class BinarySearchTree {
+    // private members
 private:
     // Node struct to hold course (or type T) data
     struct Node {
@@ -30,20 +32,25 @@ private:
         explicit Node(const T& data) : data(data) {};   // move constructor
     };
 
+    // node count tracker for size calculation
     size_t nodeCount = 0;
 
-
+    // calculate size of BST members used
     size_t getSizeBSTMembers() {
         // only calc static class members/pointer sizes, functions variables are dynamically allocated/deallocated
-        return sizeof(this) + sizeof(this->getNodeCount()) + sizeof(root);
+        return sizeof(this) + sizeof(this->getNodeCount()) + sizeof(root) + sizeof(nodeCount);
     };
 
+
+    // helper to set root node
     void setRoot(const T& data) {
         root = make_unique<Node>(data);
     };
 
+
     // BST helper (logic processing) functions
 
+    // search for a node by dataId
     T* SearchHelper(unique_ptr<Node>& node, const string& dataId) {
 
         // recurse until null node, searching BST by comparing Id values
@@ -67,6 +74,7 @@ private:
         return nullptr;
     };
 
+    // print every node by in order (lexicographically by dataId)
     void InOrderPrintHelper(unique_ptr<Node>& node) {
         // check is given node pointer is null
         if (!node) {
@@ -83,6 +91,7 @@ private:
         InOrderPrintHelper(node->right);
     };
 
+    // Insert a node given a data object
     void InsertHelper(unique_ptr<Node>& node, const T& data) {
 
         // if the  node is empty, set the node's data to the given data and end the process
@@ -103,15 +112,18 @@ private:
         }
     };
 
+    // public members
 public:
+    // implicit constructor
     // root node initialized to nullptr after implicit constructor is called
     unique_ptr<Node> root = nullptr;
 
+    // node count for size calculations
     size_t getNodeCount() const {
         return this->nodeCount;
     };
 
-    // timer is based on your relative computer, results are variable
+    // get search time: timer is based on your relative computer, results are variable
     auto getSearchTime(string& courseId) {
         auto timer_start = chrono::high_resolution_clock::now();
         this->Search(courseId);
@@ -120,19 +132,22 @@ public:
         return duration.count();
     }
 
-    // size calc base BST size + (Node count * Node size)
+    // size calc total: base private BST members + (Node count * Node size)
     size_t getSize() {
         return (this->nodeCount * sizeof(Node) + getSizeBSTMembers());
     }
 
+    // search helper: search for a node given the dataId
     T* Search(const string& dataId) {
         return this->SearchHelper(root, dataId);
     };
 
+    // print helper: print every node in order (lexicographically by dataId)
     void InOrderPrint() {
         this->InOrderPrintHelper(root);
     };
 
+    // Insert helper: insert a node given a data object
     void Insert(const T& data) {
         this->InsertHelper(root, data);
     };
